@@ -9,15 +9,15 @@ const CourseForm=({course,allAuthors,onSave,onChange,loading,errors})=>{
 name="title"
 label="title"
 value={course.title}
-onChange={this.onChange}
+onChange={onChange}
 error={errors.title} />
 <SelectInput
 name="authorId"
 label="Author"
 value={course.authorId}
+onChange={onChange}
 defaultOption="Select Author"
-options={allAuthors}
-onChange={onChange} error={errors.authorId} />
+options={allAuthors} error={errors.authorId} />
 <TextInput
 name="category"
 label="category"
@@ -29,6 +29,7 @@ error={errors.length} />
 name="length"
 label="length"
 onChange={onChange}
+value={course.length}
 error={errors.length} />
 <input 
  type="submit"
@@ -47,4 +48,5 @@ CourseForm.propTypes={
   loading:PropTypes.bool,
   errors:PropTypes.object  
 };
+
 export default CourseForm;

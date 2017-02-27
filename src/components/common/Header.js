@@ -8,7 +8,7 @@ return(
 {"|"}
 <Link to="/about" activeClassName="active">About</Link>
 {"|"}
-<Link to="/course" activeClassName="active">course</Link>
+<Link to="/courses" activeClassName="active">course</Link>
 
 </nav>
 );
