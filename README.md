@@ -1,4 +1,4 @@
-How it Works
+**How it Works**
 
 editor first looks for the ${EDITOR} environment variable. If set, it uses the value as-is, without fallbacks.
 
