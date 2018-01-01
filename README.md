@@ -9,3 +9,4 @@ For example, on Linux, editor will look for the following editors in order:
 vim
 emacs
 nano
+heroku test
